@@ -1,0 +1,80 @@
+_G.Settings = {
+    Main = {
+        -- Auto Farm Mob
+        ["Select Mob"] = "Bacon",
+        ["Farm Mob"] = true,
+        -- Auto Farm Boss
+        ["Select Boss"] = "Turbo Granny",
+        ["Auto Boss"] = false,
+        -- Config Dungeon
+        ["Distance DG"] = 25,
+        ["Safe Mode DG"] = 20,
+        -- Farm Dungeon
+        ["Auto Dungeon"] = false,
+        ["Fully Dungeon"] = false,
+    },
+    Tele = {
+        -- Auto Stat
+        ["Select Stat"] = "Defense",
+        ["Amount Point"] = 1,
+        ["Auto Stat"] = false,
+        -- Select NPC,Map
+        ["Select NPC"] = nil,
+        ["Select Map"] = nil,
+        -- Fake (Number)
+        ["Num Stack"] = 100,
+    },
+    Misc = {
+        -- Auto Store
+        ["Black List"] = "Combat",
+        ["Auto Store"] = false,
+        -- Auto Item
+        ["Select Item"] = "Demon Man",
+        ["Click Item"] = false,
+        -- Misc 1
+        ["Auto Miner"] = false,
+        ["Ramdom Chest"] = false,
+        -- Auto Equip Accessories
+        ["Select Accessories"] = nil,
+        ["Equip Accessories"] = false,
+        -- Misc 2
+        ["Collect Fruit"] = false,
+        ["Delete Effect"] = false,
+    },
+    Web = {
+        --  Webhook Player
+        ["Webhook Player"] = "hihi",
+        ["Delay Send"] = 120,
+        ["Auto Send 1"] = false,
+        -- Webhook Raid
+        ["Webhook Raid"] = "hihi",
+        ["Auto Send 2"] = false,
+        -- JobId Tab
+        ["Job Id"] = "hihi",
+    },
+    Config = {
+        -- Main Setting
+        ["Select Weapon"] = "Melee",
+        ["Select Method"] = "Upper",
+        ["Distance Farm"] = 22,
+        -- Misc Setting
+        ["Doge Skill Cid"] = false,
+        ["Auto Freeze"] = false,
+        -- Multi Equip Weapon
+        ["Hold to Change"] = 2,
+        ["Multi Weapon"] = false,
+        ["Melee"] = false,
+        ["Sword"] = false,
+        ["Power"] = false,
+        ["Special"] = false,
+        -- Auto Skill
+        ["Auto Skill"] = false,
+        ["Z"] = true, ["X"] = true,
+        ["C"] = true, ["V"] = true,
+        ["F"] = true,
+    },
+}
+
+_G.UseCustomConfig = true
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/meobeo8/Misc/refs/heads/a/rockfruit.lua"))()
