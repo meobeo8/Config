@@ -2,7 +2,7 @@ _G.Settings = {
     Main = {
         -- Auto Farm Mob
         ["Select Mob"] = "Bacon",
-        ["Farm Mob"] = true,
+        ["Farm Mob"] = false,
         -- Auto Farm Boss
         ["Select Boss"] = "Turbo Granny",
         ["Auto Boss"] = false,
@@ -15,10 +15,16 @@ _G.Settings = {
     },
     Tele = {
         -- Auto Stat
-        ["Select Stat"] = "Defense",
+        ["Select Stat"] = {
+            Melee = false,
+            Sword = false,
+            DevilFruit = false,
+            Special = false,
+            Defense = false,
+        },
         ["Amount Point"] = 1,
         ["Auto Stat"] = false,
-        -- Select NPC,Map
+        -- Select NPC, Map
         ["Select NPC"] = nil,
         ["Select Map"] = nil,
         -- Fake (Number)
@@ -26,7 +32,21 @@ _G.Settings = {
     },
     Misc = {
         -- Auto Store
-        ["Black List"] = "Combat",
+        ["Choose Item"] = {
+            ["Orb Broken"] = false,
+            ["Office Chair"] = false,
+            ["Black Banana"] = false,
+            ["Shadow Manga"] = false,
+            ["Spirit Curse"] = false,
+            ["Cooked Sausage"] = false,
+            ["Shiny Sausage"] = false,
+            ["Cursed Egg"] = false,
+            ["Cursed Banana"] = false,
+            ["Turbo Cat"] = false,
+            ["Washing Powder"] = false,
+            ["Laundry Basket"] = false,
+        },
+        ["Add Items"] = "",
         ["Auto Store"] = false,
         -- Auto Item
         ["Select Item"] = "Demon Man",
@@ -42,7 +62,7 @@ _G.Settings = {
         ["Delete Effect"] = false,
     },
     Web = {
-        --  Webhook Player
+        -- Webhook Player
         ["Webhook Player"] = "hihi",
         ["Delay Send"] = 120,
         ["Auto Send 1"] = false,
@@ -56,25 +76,32 @@ _G.Settings = {
         -- Main Setting
         ["Select Weapon"] = "Melee",
         ["Select Method"] = "Upper",
-        ["Distance Farm"] = 22,
+        ["Distance Farm"] = 8,
         -- Misc Setting
         ["Doge Skill Cid"] = false,
         ["Auto Freeze"] = false,
         -- Multi Equip Weapon
         ["Hold to Change"] = 2,
         ["Multi Weapon"] = false,
-        ["Melee"] = false,
-        ["Sword"] = false,
-        ["Power"] = false,
-        ["Special"] = false,
+        ["Select Weapon"] = {
+            Melee = true,
+            Sword = true,
+            Fruit = true,
+            Special = true,
+        },
         -- Auto Skill
         ["Auto Skill"] = false,
-        ["Z"] = true, ["X"] = true,
-        ["C"] = true, ["V"] = true,
-        ["F"] = true,
+        ["Select Skill"] = {
+            Z = true,
+            X = true,
+            C = true,
+            V = true,
+            F = false,
+        },
     },
 }
 
+
 _G.UseCustomConfig = true
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/meobeo8/Misc/refs/heads/a/rockfruit.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/meobeo8/elgato/a/Loader"))()
