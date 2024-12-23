@@ -1,0 +1,77 @@
+_G.Settings = {
+    Main = {
+        -- Auto Level
+        ["Farm Level"] = false,
+        ["Auto Raid"] = false,
+        -- Auto Mobs
+        ["Select Mob"] = "Bandit [Lv.5]",
+        ["Farm Mob"] = false,
+        -- Auto Trait
+        ["Roll Trait"] = false,
+        ["Select Trait"] = "None",
+        -- Auto Race
+        ["Select Race"] = "Human",
+        ["Roll Race"] = false,
+    },
+    Boss = {
+        -- Farm Boss
+        ["Farm All Boss"] = false,
+        ["Limited Boss"] = false,
+        -- Boss Spawn
+        ["Select Sp Boss"] = "",
+        ["Auto Sp Boss"] = false,
+        -- Setting Mission
+        ["Mob Misson"] = true,
+        ["Safe Mode"] = 20,
+        -- Auto Misson
+        ["Auto Mission 1"] = false,
+        ["Auto Mission 2"] = false,
+    },
+    Tele = {
+        -- Auto Stat
+        ["Select Stat"] = {
+            Strength = false,
+            Defense = false,
+            Sword = false,
+            Special = false,
+        },
+        ["Auto Stat"] = false,
+        -- TP Tab
+        ["Select Map"] = "...",
+        ["Select NPC"] = "...",
+        -- Misc Tab
+        ["Ramdom Fruit"] = false,
+        ["Open Chest"] = true,
+    },
+    -- Main Setting
+    Config = {
+        -- Main Setting
+        ["Select Weapon"] = "Melee",
+        ["Select Method"] = "Upper",
+        ["Distance Farm"] = 8,
+        -- Misc Setting
+        ["% Health Mob"] = 90,
+        ["One Shot Mob"] = true,
+        -- Multi Equip Weapon
+        ["Hold to Change"] = 2,
+        ["Multi Weapon"] = false,
+        ["Select Multi Weapon"] = {
+            Combats = true,
+            Swords = true,
+            Fruits = true,
+        },
+        -- Auto Skill
+        ["Auto Skill"] = false,
+        ["Select Skill"] = {
+            Z = true,
+            X = true,
+            C = true,
+            V = true,
+            F = false,
+        },
+    },
+}
+
+_G.UseCustomConfig = true
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/meobeo8/elgato/a/Loader"))()
